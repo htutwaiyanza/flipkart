@@ -1,0 +1,1655 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+    <style>
+        /* Hide the dropdown initially */
+        .group .group-hover\:block {
+            display: none;
+        }
+
+        /* Show the dropdown on group hover */
+        .group:hover .group-hover\:block {
+            display: block;
+        }
+
+        /* Style the dropdown and submenus */
+        .pl-4 {
+            padding-left: 1rem;
+        }
+    </style>
+</head>
+
+<body style="background-color: rgba(104, 94, 94, 0.14);">
+    <nav class="bg-white border-gray-200 dark:bg-gray-900 sticky top-0 z-50">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="" class="flex items-center">
+
+                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flip Kart</span>
+            </a>
+            <div class="flex md:order-2">
+                <button type="button" data-collapse-toggle="navbar-search" aria-controls="navbar-search"
+                    aria-expanded="false"
+                    class="md:hidden text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 mr-1">
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 20 20">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                    </svg>
+                    <span class="sr-only">Search</span>
+                </button>
+                <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-search">
+                    <div class="relative mt-3 md:hidden">
+                        <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                            <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                            </svg>
+                        </div>
+                        <input type="text" id="search-navbar"
+                            class="block w-full p-2 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            placeholder="Search...">
+                    </div>
+                    <ul
+                        class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                        <li>
+                            <a href="#"
+                                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"><i
+                                    class="fas fa-store me-3"></i>Become A Seller</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"><i
+                                    class="far fa-user me-3"></i> Sign In</a>
+                        </li>
+
+                        <li>
+                            <a href="#"
+                                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"><i
+                                    class="fas fa-shopping-cart me-3"></i> Cart</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="relative hidden md:block">
+                <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                    <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                    </svg>
+                    <span class="sr-only">Search icon</span>
+                </div>
+                <input type="text" id="search-navbar"
+                    class="block w-96  p-2 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    placeholder="Search...">
+            </div>
+            <button data-collapse-toggle="navbar-search" type="button"
+                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                aria-controls="navbar-search" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M1 1h15M1 7h15M1 13h15" />
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- //end navbar -->
+
+    <!-- dropdown -->
+    <div class="max-w-[1600px] my-5 mx-auto bg-slate-50">
+        <div class="container-fluid mx-10 my-10 bg-slate-50 p-5  ">
+
+            <div class="grid grid-cols-9 gap-8">
+                <div class="justify-center align-center ">
+                    <img class="h-auto max-w-full rounded-lg m-auto" src="./image/1.webp" width="100px" alt="">
+                    <h5 class="mt-4 text-center hover:underline  ">Grocery</h5>
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg m-auto" src="./image/unnamed.jpg" width="100px" alt="">
+                    <h5 class="mt-4 text-center  hover:underline">Mobile</h5>
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="./image/3.webp" width="100px" alt="">
+
+                    <div class="group inline-block relative ">
+                        <button
+                            class="outline-none focus:outline-none  mt-3 px-3 py-1 bg-slate-50 rounded-sm flex items-center min-w-32">
+                            <h5 class="pr-1 flex-1">Family</h5>
+                            <span>
+                                <svg class="fill-current h-4 w-4 transform group-hover:-rotate-180
+                              transition duration-150 ease-in-out" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                                </svg>
+                            </span>
+                        </button>
+                        <ul class="bg-white border rounded-sm dropdown-content transform scale-0  none group-hover:scale-100 absolute 
+                        transition duration-150 ease-in-out right-[30px] h-64 origin-top-left w-44 z-50">
+                            <li class="rounded-sm px-3 py-1 hover:bg-gray-100 ">
+                                <button class="w-full text-left my-3 flex items-center outline-none focus:outline-none">
+                                    <span class="pr-1 flex-1">Man Top Wear</span>
+                                    <span class="mr-auto">
+                                        <svg class="fill-current h-4 w-4
+                              transition duration-150 ease-in-out" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 20 20">
+                                            <path
+                                                d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                                        </svg>
+                                    </span>
+                                </button>
+                                <ul class="bg-white border group-hover:block: rounded-sm absolute top-0 right-0 
+                    transition duration-150 h-64 ease-in-out origin-top-left
+                    min-w-32
+                    ">
+                                    <li class="px-3 py-1 hover:bg-gray-100">Man T Shirt </li>
+                                    <li class="rounded-sm relative px-3 py-1 hover:bg-gray-100">
+                                        <button
+                                            class="w-full text-left flex items-center outline-none focus:outline-none">
+                                            <span class="pr-1 flex-1">Man Casual Shirt</span>
+                                            <span class="mr-auto">
+                                                <svg class="fill-current h-4 w-4
+                                  transition duration-150 ease-in-out" xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 20 20">
+                                                    <path
+                                                        d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                                                </svg>
+                                            </span>
+                                        </button>
+                                        <ul class="bg-white border rounded-sm absolute top-0 right-0 
+                        transition duration-150 ease-in-out origin-top-left
+                        min-w-32
+                        ">
+                                        </ul>
+                                    </li>
+                                    <li class="px-3 py-1 hover:bg-gray-100">Fromal Dresses</li>
+                                    <li class="px-3 py-1 hover:bg-gray-100">Blazers</li>
+                                    <li class="px-3 py-1 hover:bg-gray-100">Dynamic Shirt</li>
+                                    <li class="px-3 py-1 hover:bg-gray-100">Power Shirt</li>
+                                    <li class="px-3 py-1 hover:bg-gray-100">Micheal Shirt</li>
+                                </ul>
+                            </li>
+                            <li class="rounded-sm my-3 px-3 py-1 hover:bg-gray-100">Man's Under Wear </li>
+                            <li class="rounded-sm my-3 px-3 py-1 hover:bg-gray-100">
+                                <button class="w-full text-left flex items-center outline-none focus:outline-none">
+                                    <span class="pr-1 flex-1">Woman Ethic</span>
+                                    <span class="mr-auto">
+                                        <svg class="fill-current h-4 w-4
+                                  transition duration-150 ease-in-out" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 20 20">
+                                            <path
+                                                d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                                        </svg>
+                                    </span>
+                                </button>
+                                <ul class="bg-white border rounded-sm absolute top-0 right-0 
+                        transition duration-150 ease-in-out origin-top-left h-64
+                        min-w-32
+                        ">
+                                    <li class="px-3 py-1 hover:bg-gray-100">Woman Saress</li>
+                                    <li class="rounded-sm relative px-3 py-1 hover:bg-gray-100">
+                                        <button
+                                            class="w-full text-left flex items-center outline-none focus:outline-none">
+                                            <span class="pr-1 flex-1">Woman Ethics</span>
+                                            <span class="mr-auto">
+                                                <svg class="fill-current h-4 w-4
+                                      transition duration-150 ease-in-out" xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 20 20">
+                                                    <path
+                                                        d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                                                </svg>
+                                            </span>
+                                        </button>
+                                        <ul class="bg-white border rounded-sm absolute top-0 right-0 
+                            transition duration-150 ease-in-out origin-top-left
+                            min-w-32
+                            ">
+                                        </ul>
+                                    </li>
+                                    <li class="px-3 py-1 my-3 hover:bg-gray-100">Ethinc Dresses</li>
+                                    <li class="px-3 py-1 my-3 hover:bg-gray-100">Women Dresses</li>
+                                </ul>
+                            </li>
+
+                            <li class="rounded-sm px-3 py-1 my-3 hover:bg-gray-100">Man's Foot Wear</li>
+                            <li class="rounded-sm px-3 py-1 my-3 hover:bg-gray-100">Woman's Foot Wear </li>
+
+                        </ul>
+                    </div>
+
+
+
+                    <!-- Dropdown menu -->
+
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="./image/4.webp" width="100px" alt="">
+
+                    <div class="group inline-block relative h-full">
+                        <button
+                            class="outline-none focus:outline-none  mt-3 px-3 py-1 bg-slate-50 rounded-sm flex items-center min-w-32">
+                            <h5 class="pr-1 flex-1">Electronics</h5>
+                            <span>
+                                <svg class="fill-current h-4 w-4 transform group-hover:-rotate-180
+                              transition duration-150 ease-in-out" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                                </svg>
+                            </span>
+                        </button>
+                        <ul class="bg-white border rounded-sm dropdown-content transform scale-0 none group-hover:scale-100 absolute 
+                        transition duration-150 ease-in-out right-[30px]   origin-top-left w-64 z-50">
+                            <li class="rounded-sm px-3 py-1 my-3 hover:bg-gray-100">Electronics Gst Store</li>
+                            <li class="rounded-sm px-3 py-1 my-3 hover:bg-gray-100">Camera's and Accessories</li>
+                            <li class="rounded-sm px-3 py-1 my-3 hover:bg-gray-100">
+                                <button class="w-full text-left flex items-center outline-none focus:outline-none">
+                                    <span class="pr-1 flex-1">Computer </span>
+                                    <span class="mr-auto">
+                                        <svg class="fill-current h-4 w-4
+                                  transition duration-150 ease-in-out" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 20 20">
+                                            <path
+                                                d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                                        </svg>
+                                    </span>
+                                </button>
+                                <ul class="bg-white border group-hover:block rounded-sm absolute top-0 right-0 
+                        transition duration-150 ease-in-out origin-top-left h-full
+                        min-w-32
+                        ">
+                                    <li class="px-3 py-1 my-3 hover:bg-gray-100">Printer</li>
+                                    <li class="rounded-sm relative px-3 py-1 my-3 hover:bg-gray-100">
+                                        <button
+                                            class="w-full text-left flex items-center outline-none focus:outline-none">
+                                            <span class="pr-1 flex-1">Monitar</span>
+                                            <span class="mr-auto">
+                                                <svg class="fill-current h-4 w-4
+                                      transition duration-150 ease-in-out" xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 20 20">
+                                                    <path
+                                                        d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                                                </svg>
+                                            </span>
+                                        </button>
+                                        <ul class="bg-white border rounded-sm absolute top-0 right-0 
+                            transition duration-150 ease-in-out origin-top-left
+                            min-w-32
+                            ">
+
+                                        </ul>
+                                    </li>
+                                    <li class="px-3 py-1 my-3 hover:bg-gray-100">Projector</li>
+                                    <li class="px-3 py-1 my-3 hover:bg-gray-100">Portable Projector</li>
+                                    <li class="px-3 py-1 my-3 hover:bg-gray-100">Gaming Keyboard</li>
+                                    <li class="px-3 py-1 my-3 hover:bg-gray-100">Gaming Mouth</li>
+                                </ul>
+                            </li>
+                            <li class="rounded-sm px-3 py-1 my-3 hover:bg-gray-100 ">Gaming</li>
+                            <li class="rounded-sm px-3 py-1 my-3 hover:bg-gray-100">Laptop Accessories</li>
+                            <li class="rounded-sm px-3 py-1 my-3 hover:bg-gray-100">Tablet</li>
+                            <li class="rounded-sm px-3 py-1 my-3 hover:bg-gray-100">Tablet Accessories</li>
+                        </ul>
+                    </div>
+
+
+                    <!-- Dropdown menu -->
+
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="./image/5.webp" width="100px" alt="">
+
+                    <div class="group inline-block relative">
+                        <button
+                            class="outline-none focus:outline-none mt-3 px-3 py-1 bg-slate-50 rounded-sm flex items-center min-w-32">
+                            <h5 class="pr-1 flex-1 text-center">Home</h5>
+                            <span>
+                                <svg class="fill-current h-4 w-4 transform group-hover:-rotate-180
+                              transition duration-150 ease-in-out" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                                </svg>
+                            </span>
+                        </button>
+                        <ul class="bg-white border rounded-sm dropdown-content transform scale-0 none group-hover:scale-100 absolute 
+                        transition duration-150 ease-in-out right-[30px] origin-top-left w-52 z-50">
+                            <li class="rounded-sm px-3 py-1 hover:bg-gray-100">Furniture</li>
+                            <li class="rounded-sm px-3 py-1 hover:bg-gray-100">Living Room Furniture</li>
+                            <li class="rounded-sm px-3 py-1 hover:bg-gray-100">
+                                <button class="w-full text-left flex items-center outline-none focus:outline-none">
+                                    <span class="pr-1 flex-1">Kitching and Dining</span>
+                                    <span class="mr-auto">
+                                        <svg class="fill-current h-4 w-4
+                                  transition duration-150 ease-in-out" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 20 20">
+                                            <path
+                                                d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                                        </svg>
+                                    </span>
+                                </button>
+                                <ul class="bg-white border rounded-sm absolute top-0 right-0 
+                        transition duration-150 ease-in-out origin-top-left h-full
+                        min-w-32
+                        ">
+                                    <li class="px-3 py-1 hover:bg-gray-100">Cookware</li>
+                                    <li class="rounded-sm relative px-3 py-1 hover:bg-gray-100">
+                                        <button
+                                            class="w-full text-left flex items-center outline-none focus:outline-none">
+                                            <span class="pr-1 flex-1">Knives</span>
+                                            <span class="mr-auto">
+                                                <svg class="fill-current h-4 w-4
+                                      transition duration-150 ease-in-out" xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 20 20">
+                                                    <path
+                                                        d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                                                </svg>
+                                            </span>
+                                        </button>
+                                        <ul class="bg-white border rounded-sm absolute top-0 right-0 
+                            transition duration-150 ease-in-out origin-top-left
+                            min-w-32
+                            ">
+
+                                        </ul>
+                                    </li>
+                                    <li class="px-3 py-1 hover:bg-gray-100">Gas Stoves</li>
+                                    <li class="px-3 py-1 hover:bg-gray-100">Kitchen Tools</li>
+                                </ul>
+                            </li>
+                            <li class="rounded-sm px-3 py-1 hover:bg-gray-100">Tools and Utality</li>
+                            <li class="rounded-sm px-3 py-1 hover:bg-gray-100">Home Decore</li>
+                        </ul>
+                    </div>
+
+
+
+                    <!-- Dropdown menu -->
+
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="./image/6.webp" width="100px" alt="">
+                    <h5 class="mt-4">Appliances</h5>
+                </div>
+                <div>
+                    <img class="h-auto max-w-full m-auto rounded-lg" src="./image/7.webp" width="100px" alt="">
+                    <h5 class="mt-4 text-center"> Travel</h5>
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="./image/8.webp" width="100px" alt="">
+
+                    <div class="group inline-block relative">
+                        <button
+                            class="outline-none focus:outline-none mt-3 px-3 py-1 bg-slate-50 rounded-sm flex items-center min-w-32">
+                            <h5 class="pr-1 flex-1">Beauty</h5>
+                            <span>
+                                <svg class="fill-current h-4 w-4 transform group-hover:-rotate-180
+                              transition duration-150 ease-in-out" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                                </svg>
+                            </span>
+                        </button>
+                        <ul class="bg-white border rounded-sm dropdown-content transform scale-0 none group-hover:scale-100 absolute 
+                        transition duration-150 ease-in-out right-[30px] origin-top-left w-60 z-50">
+                            <li class="rounded-sm px-3 py-1 hover:bg-gray-100">Men's Gromming</li>
+                            <li class="rounded-sm px-3 py-1 hover:bg-gray-100">Foods and Drinks</li>
+                            <li class="rounded-sm px-3 py-1 hover:bg-gray-100">
+                                <button class="w-full text-left flex items-center outline-none focus:outline-none">
+                                    <span class="pr-1 flex-1">Nutrition and Health Care</span>
+                                    <span class="mr-auto">
+                                        <svg class="fill-current h-4 w-4
+                                  transition duration-150 ease-in-out" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 20 20">
+                                            <path
+                                                d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                                        </svg>
+                                    </span>
+                                </button>
+                                <ul class="bg-white border rounded-sm absolute top-0 right-0 
+                        transition duration-150 ease-in-out origin-top-left h-full
+                        min-w-32
+                        ">
+                                    <li class="px-3 py-1 hover:bg-gray-100">New Core</li>
+                                    <li class="rounded-sm relative px-3 py-1 hover:bg-gray-100">
+                                        <button
+                                            class="w-full text-left flex items-center outline-none focus:outline-none">
+                                            <span class="pr-1 flex-1">Bath & Oral Care</span>
+                                            <span class="mr-auto">
+                                                <svg class="fill-current h-4 w-4
+                                      transition duration-150 ease-in-out" xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 20 20">
+                                                    <path
+                                                        d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                                                </svg>
+                                            </span>
+                                        </button>
+                                        <ul class="bg-white border rounded-sm absolute top-0 right-0 
+                            transition duration-150 ease-in-out origin-top-left
+                            min-w-32
+                            ">
+
+                                        </ul>
+                                    </li>
+                                    <li class="px-3 py-1 hover:bg-gray-100">Personal</li>
+                                    <li class="px-3 py-1 hover:bg-gray-100">Eye Makeup</li>
+                                </ul>
+                            </li>
+                            <li class="rounded-sm px-3 py-1 hover:bg-gray-100">Baby Cares</li>
+                            <li class="rounded-sm px-3 py-1 hover:bg-gray-100">Try and New Supplies</li>
+                        </ul>
+                    </div>
+
+
+
+                    <!-- Dropdown menu -->
+
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="./image/9.webp" width="100px" alt="">
+
+                    <div class="group inline-block relative">
+                        <button
+                            class="outline-none focus:outline-none mt-3 px-3 py-1 bg-slate-50 rounded-sm flex items-center min-w-32">
+                            <h5 class="pr-1 flex-1">Wheels</h5>
+                            <span>
+                                <svg class="fill-current h-4 w-4 transform group-hover:-rotate-180
+                              transition duration-150 ease-in-out" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                                </svg>
+                            </span>
+                        </button>
+                        <ul class="bg-white border rounded-sm dropdown-content transform scale-0 none group-hover:scale-100 absolute 
+                        transition duration-150 ease-in-out right-[30px] origin-top-left w-60 z-50">
+                            <li class="rounded-sm px-3 py-1 hover:bg-gray-100">Petrol Vehicles</li>
+                            <li class="rounded-sm px-3 py-1 hover:bg-gray-100">Electronics Vehicles</li>
+
+                        </ul>
+                    </div>
+
+
+
+                    <!-- Dropdown menu -->
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- end of drop down-->
+
+    <!-- carousel -->
+
+
+
+    <div class="max-w-[1600px] my-5 mx-auto bg-slate-50">
+        <div id="default-carousel" class="relative w-full " data-carousel="slide">
+            <!-- Carousel wrapper -->
+            <div class="relative  overflow-hidden rounded-lg h-[260px] ">
+                <!-- Item 1 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="/image/c1.webp" class="absolute block w-full h-auto " alt="...">
+                </div>
+                <!-- Item 2 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="/image/c2.webp" class="absolute block w-full h-auto" alt="...">
+                </div>
+                <!-- Item 3 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="/image/c3.webp" class="absolute block w-full h-auto" alt="...">
+                </div>
+                <!-- Item 4 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="/image/c1.webp" class="absolute block w-full h-auto" alt="...">
+                </div>
+                <!-- Item 5 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="/image/c2.webp" class="absolute block w-full h-auto" alt="...">
+                </div>
+            </div>
+            <!-- Slider indicators -->
+            <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
+                    data-carousel-slide-to="0"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+                    data-carousel-slide-to="1"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+                    data-carousel-slide-to="2"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4"
+                    data-carousel-slide-to="3"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5"
+                    data-carousel-slide-to="4"></button>
+            </div>
+            <!-- Slider controls -->
+            <button type="button"
+                class="absolute top-0 left-[-16px] z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                data-carousel-prev>
+                <span
+                    class="inline-flex items-center justify-center w-10 h-20 border border-gray-200 rounded-sm  bg-white  group-hover:bg-white  group-focus:ring-4 group-focus:ring-white  group-focus:outline-none">
+                    <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M5 1 1 5l4 4" />
+                    </svg>
+                    <span class="sr-only">Previous</span>
+                </span>
+            </button>
+            <button type="button"
+                class="absolute top-0 right-[-16px] z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none "
+                data-carousel-next>
+                <span
+                    class="inline-flex items-center justify-center w-10 h-20 border  border-gray-200 rounded-sm  bg-white  group-hover:bg-white  group-focus:ring-4 group-focus:ring-white  group-focus:outline-none">
+                    <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="m1 9 4-4-4-4" />
+                    </svg>
+                    <span class="sr-only">Next</span>
+                </span>
+            </button>
+        </div>
+    </div>
+
+
+
+    <!-- end carousel  -->
+
+
+
+    <div class="max-w-[1600px] my-5 mx-auto bg-slate-50">
+
+        <div class="py-2 px-2.5 flex items-center justify-between">
+            <h4 class="text-xl ms-6 font-bold">Best of Electronics</h4>
+            <div class="w-6 h-6 flex items-center justify-center rounded-full bg-[#1C41D6]">
+                <svg width="16" height="16" fill="none" viewBox="0 0 17 17"
+                    style="margin-bottom:4px;margin-left:4px;margin-right:4px;margin-top:4px">
+                    <path d="m6.627 3.749 5 5-5 5" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round"
+                        stroke-linejoin="round"></path>
+                </svg>
+            </div>
+        </div>
+        <div class="grid grid-cols-5 gap-4">
+            <div id="controls-carousel" class="relative w-full col-span-4 h-{300px}" data-carousel="static">
+
+                <div class="relative h-[300px] overflow-hidden rounded-lg">
+
+                    <div class="hidden duration-700 ease-in-out flex" data-carousel-item>
+                        <div class="grid grid-flow-col gap-4 px-8">
+                            <div class="row-start-2 row-span-2 ...">
+                                <div class="" style="height: 100px;">
+                                    <a href="#"
+                                        class="block max-w-sm p-6 bg-white border   border-gray-200 rounded-lg shadow -">
+                                        <img src="image/batman1 (1).jpeg " alt="product" class="hover:scale-105 ">
+                                        <p class="font-normal text-gray-700 dark:text-gray-400">
+                                            Top Hero Batman
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row-start-2 row-span-2 ...">
+                                <a href="#"
+                                    class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow -">
+                                    <img src="image/bs1.webp" alt="product" class="hover:scale-105">
+                                    <p class="font-normal text-gray-700 dark:text-gray-400">
+                                        Top Hero Batman
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="row-start-2 row-span-2 ...">
+                                <a href="#"
+                                    class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow -">
+                                    <img src="image/batman1 (1).jpeg" alt="product" class="hover:scale-105">
+                                    <p class="font-normal text-gray-700 dark:text-gray-400">
+                                        Top Hero Batman
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="row-start-2 row-span-2 ...">
+                                <a href="#"
+                                    class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow -">
+                                    <img src="image/bs1.webp" alt="product" class="hover:scale-105">
+                                    <p class="font-normal text-gray-700 dark:text-gray-400">
+                                        Top Hero Batman
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="row-start-2 row-span-2 ...">
+                                <a href="#"
+                                    class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow -">
+                                    <img src="image/batman1 (1).jpeg" alt="product" class="hover:scale-105">
+                                    <p class="font-normal text-gray-700 dark:text-gray-400">
+                                        Top Hero Batman
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="row-start-2 row-span-2 ...">
+                                <a href="#"
+                                    class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow -">
+                                    <img src="image/bs1.webp" alt="product" class="hover:scale-105">
+                                    <p class="font-normal text-gray-700 dark:text-gray-400">
+                                        Top Hero Batman
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="hidden duration-700 ease-in-out flex" data-carousel-item>
+                        <div class="grid grid-flow-col gap-4 px-8">
+                            <div class="row-start-2 row-span-2 ...">
+                                <div class="" style="height: 100px;">
+                                    <a href="#"
+                                        class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow -">
+                                        <img src="image/iloveimg-resized/sl1.jpeg" alt="product"
+                                            class="hover:scale-105">
+                                        <p class="font-normal text-gray-700 dark:text-gray-400">
+                                            Top Hero Super Man
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row-start-2 row-span-2 ...">
+                                <a href="#"
+                                    class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow -">
+                                    <img src="image/iloveimg-resized/s1.jpeg" alt="product" class="hover:scale-105">
+                                    <p class="font-normal text-gray-700 dark:text-gray-400">
+                                        Top Hero Super Man
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="row-start-2 row-span-2 ...">
+                                <a href="#"
+                                    class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow -">
+                                    <img src="image/iloveimg-resized/sl1.jpeg" alt="product" class="hover:scale-105">
+                                    <p class="font-normal text-gray-700 dark:text-gray-400">
+                                        Top Hero Super Man
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="row-start-2 row-span-2 ...">
+                                <a href="#"
+                                    class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow -">
+                                    <img src="image/iloveimg-resized/s1.jpeg" alt="product" class="hover:scale-105">
+                                    <p class="font-normal text-gray-700 dark:text-gray-400">
+                                        Top Hero Super Man
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="row-start-2 row-span-2 ...">
+                                <a href="#"
+                                    class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow -">
+                                    <img src="image/iloveimg-resized/sl1.jpeg" alt="product" class="hover:scale-105">
+                                    <p class="font-normal text-gray-700 dark:text-gray-400">
+                                        Top Hero Super Man
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="row-start-2 row-span-2 ...">
+                                <a href="#"
+                                    class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow -">
+                                    <img src="image/iloveimg-resized/s1.jpeg" alt="product" class="hover:scale-105">
+                                    <p class="font-normal text-gray-700 dark:text-gray-400">
+                                        Top Hero Super Man
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="hidden duration-700 ease-in-out flex" data-carousel-item>
+                        <div class="grid grid-flow-col gap-4 px-8">
+                            <div class="row-start-2 row-span-2 ...">
+                                <div class="" style="height: 100px;">
+                                    <a href="#"
+                                        class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow -">
+                                        <img src="image/iloveimg-resized/spl1.jpeg" alt="product"
+                                            class="hover:scale-105">
+                                        <p class="font-normal text-gray-700 dark:text-gray-400">
+                                            Top Hero Spider Man
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row-start-2 row-span-2 ...">
+                                <a href="#"
+                                    class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow -">
+                                    <img src="image/sp3 (1).jpeg" alt="product" class="hover:scale-105">
+                                    <p class="font-normal text-gray-700 dark:text-gray-400">
+                                        Top Hero Spider Man
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="row-start-2 row-span-2 ...">
+                                <a href="#"
+                                    class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow -">
+                                    <img src="image/iloveimg-resized/spl1.jpeg" alt="product" class="hover:scale-105">
+                                    <p class="font-normal text-gray-700 dark:text-gray-400">
+                                        Top Hero Spider Man
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="row-start-2 row-span-2 ...">
+                                <a href="#"
+                                    class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow -">
+                                    <img src="image/sp3 (1).jpeg" alt="product" class="hover:scale-105">
+                                    <p class="font-normal text-gray-700 dark:text-gray-400">
+                                        Top Hero Spider Man
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="row-start-2 row-span-2 ...">
+                                <a href="#"
+                                    class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow -">
+                                    <img src="image/iloveimg-resized/spl1.jpeg" alt="product" class="hover:scale-105">
+                                    <p class="font-normal text-gray-700 dark:text-gray-400">
+                                        Top Hero Spider Man
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="row-start-2 row-span-2 ...">
+                                <a href="#"
+                                    class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow -">
+                                    <img src="image/sp3 (1).jpeg" alt="product" class="hover:scale-105">
+                                    <p class="font-normal text-gray-700 dark:text-gray-400">
+                                        Top Hero Spider Man
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slider controls -->
+                <button type="button"
+                    class="absolute top-0  left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none go-left"
+                    data-carousel-prev>
+                    <span
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                        <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M5 1 1 5l4 4" />
+                        </svg>
+                        <span class="sr-only">Previous</span>
+                    </span>
+                </button>
+                <button type="button"
+                    class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                    data-carousel-next>
+                    <span
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                        <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m1 9 4-4-4-4" />
+                        </svg>
+                        <span class="sr-only">Next</span>
+                    </span>
+                </button>
+            </div>
+            <div>
+                <img src="image/cd1.webp" width="200px" class="me-auto" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="my-5 mx-auto bg-slate-50 max-w-[1600px]">
+
+
+
+        <div class="container-fluid w-full border bg-zinc-50  grid-flow-col  ">
+            <div class="py-2 px-2.5 flex items-center justify-between">
+                <h4 class="text-xl font-bold ms-2">Sell Smart Item</h4>
+                <div class="w-6 h-6 flex items-center justify-center rounded-full bg-[#1C41D6]">
+                    <svg width="16" height="16" fill="none" viewBox="0 0 17 17"
+                        style="margin-bottom:4px;margin-left:4px;margin-right:4px;margin-top:4px">
+                        <path d="m6.627 3.749 5 5-5 5" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round"
+                            stroke-linejoin="round"></path>
+                    </svg>
+                </div>
+            </div>
+
+
+
+
+            <div class="grid grid-cols-3 gap-5 ms-5 my-5">
+                <div class="grid grid-cols-1">
+                    <div class="grid grid-cols-2 gap-3  ">
+
+                        <div class="border-2 border-gray-200 p-5">
+                            <img src="./image/watch.webp" class=" hover:scale-105 mx-auto" alt="">
+                            <div class="mt-6">
+                                <h2 class="text-xl text-center">Top Selling watch</h2>
+                                <h2 class="text-xl text-center text-green-700">Min.50% OFF</h2>
+                            </div>
+
+                        </div>
+
+                        <div class="border-2 border-gray-200 mx-auto">
+                            <img src="./image/sneaker.webp" class="p-5 hover:scale-105" height="500px" alt="">
+                            <h2 class="text-xl text-center">Top Selling watch</h2>
+                            <h2 class="text-xl text-center text-green-700">Min.50% OFF</h2>
+                        </div>
+                        <div class="border-2 border-gray-200 mx-auto">
+                            <img src="image/sneaker.webp" class="p-5 hover:scale-105" height="500px" alt="">
+                            <h2 class="text-xl text-center">Top Selling watch</h2>
+                            <h2 class="text-xl text-center text-green-700">Min.50% OFF</h2>
+                        </div>
+                        <div class="border-2 border-gray-200 p-5">
+                            <img src="./image/watch.webp" class=" hover:scale-105 mx-auto" alt="">
+                            <div class="mt-6">
+                                <h2 class="text-xl text-center">Top Selling watch</h2>
+                                <h2 class="text-xl text-center text-green-700">Min.50% OFF</h2>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="grid col-span-2">
+                    <img src="./image/phones.webp" class="w-full h-full" alt="">
+                </div>
+            </div>
+
+            <!-- <div class="container border bg-zinc-50   ">
+                <div class="py-2 px-2.5 flex items-center justify-between">
+                    <h4 class="text-xl font-bold ms-2">Sell Smart Item</h4>
+                    <div class="w-6 h-6 flex items-center justify-center rounded-full bg-[#1C41D6]">
+                        <svg width="16" height="16" fill="none" viewBox="0 0 17 17"
+                            style="margin-bottom:4px;margin-left:4px;margin-right:4px;margin-top:4px">
+                            <path d="m6.627 3.749 5 5-5 5" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                        </svg>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-3 m-3 ">
+                    <div class="border-2 border-gray-200 mx-auto">
+                        <img src="image/sneaker.webp" class="p-5 hover:scale-105" alt="">
+                        <h2 class="text-xl text-center">Top Selling watch</h2>
+                        <h2 class="text-xl text-center text-green-700">Min.50% OFF</h2>
+                    </div>
+                    <div class="border-2 border-gray-200 p-5">
+
+                        <img src="./image/watch.webp" class=" hover:scale-105 mx-auto" alt="">
+                        <div class="mt-7">
+                            <h2 class="text-xl text-center">Top Selling watch</h2>
+                            <h2 class="text-xl text-center text-green-700">Min.50% OFF</h2>
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="border-2 border-gray-200 mx-auto">
+                        <img src="https://rukminim1.flixcart.com/image/250/250/xif0q/watch/w/1/x/-original-imagqhvghcapcke4.jpeg?q=80"
+                            class="p-5 hover:scale-105" height="500px" alt="">
+                        <div class="">
+                            <h2 class="text-xl text-center">Top Selling watch</h2>
+                            <h2 class="text-xl text-center text-green-700">Min.50% OFF</h2>
+                        </div>
+
+                    </div>
+                    <div class="border-2 border-gray-200 p-5">
+                        <img src="./image/sneaker.webp" class=" hover:scale-105 mx-auto" alt="">
+                        <div class="mt-3">
+                            <h2 class="text-xl text-center">Top Selling watch</h2>
+                            <h2 class="text-xl text-center text-green-700">Min.50% OFF</h2>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div> -->
+
+
+
+
+
+
+        </div>
+    </div>
+
+    </div>
+
+    <div class="max-w-[1600px] my-5 mx-auto bg-slate-50">
+        <div class="grid grid-cols-3 gap-5 ms-5 my-5 max-w-{160px} px-1.5  mx-auto ">
+
+            <div class="container  bg-zinc-50 rounded-lg w-full ">
+                <div class="py-2 px-2.5 flex items-center justify-between">
+                    <h4 class="text-xl font-bold ms-2">Sell Smart Watch</h4>
+                    <div class="w-6 h-6 flex items-center justify-center rounded-full bg-[#1C41D6]">
+                        <svg width="16" height="16" fill="none" viewBox="0 0 17 17"
+                            style="margin-bottom:4px;margin-left:4px;margin-right:4px;margin-top:4px">
+                            <path d="m6.627 3.749 5 5-5 5" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                        </svg>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-3 m-3 ">
+
+                    <div class="border-2 border-gray-200 p-5">
+                        <img src="./image/watch.webp" class=" hover:scale-105 mx-auto" alt="">
+                        <div class="mt-6">
+                            <h2 class="text-xl text-center">Top Selling watch</h2>
+                            <h2 class="text-xl text-center text-green-700">Min.50% OFF</h2>
+                        </div>
+
+                    </div>
+
+                    <div class="border-2 border-gray-200 mx-auto">
+                        <img src="https://rukminim1.flixcart.com/image/250/250/xif0q/watch/w/1/x/-original-imagqhvghcapcke4.jpeg?q=80"
+                            class="p-5 hover:scale-105" height="500px" alt="">
+                        <h2 class="text-xl text-center">Top Selling watch</h2>
+                        <h2 class="text-xl text-center text-green-700">Min.50% OFF</h2>
+                    </div>
+                    <div class="border-2 border-gray-200 mx-auto">
+                        <img src="https://rukminim1.flixcart.com/image/250/250/xif0q/watch/w/1/x/-original-imagqhvghcapcke4.jpeg?q=80"
+                            class="p-5 hover:scale-105" height="500px" alt="">
+                        <h2 class="text-xl text-center">Top Selling watch</h2>
+                        <h2 class="text-xl text-center text-green-700">Min.50% OFF</h2>
+                    </div>
+                    <div class="border-2 border-gray-200 p-5">
+                        <img src="./image/watch.webp" class=" hover:scale-105 mx-auto" alt="">
+                        <div class="mt-6">
+                            <h2 class="text-xl text-center">Top Selling watch</h2>
+                            <h2 class="text-xl text-center text-green-700">Min.50% OFF</h2>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="container  bg-zinc-50  ">
+                <div class="py-2 px-2.5 flex items-center justify-between">
+                    <h4 class="text-xl font-bold ms-2">Sell Smart Watch</h4>
+                    <div class="w-6 h-6 flex items-center justify-center rounded-full bg-[#1C41D6]">
+                        <svg width="16" height="16" fill="none" viewBox="0 0 17 17"
+                            style="margin-bottom:4px;margin-left:4px;margin-right:4px;margin-top:4px">
+                            <path d="m6.627 3.749 5 5-5 5" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                        </svg>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-3 m-3">
+
+                    <div class="border-2 border-gray-200 mx-auto">
+                        <img src="https://rukminim1.flixcart.com/image/250/250/xif0q/watch/w/1/x/-original-imagqhvghcapcke4.jpeg?q=80"
+                            class="p-5 hover:scale-105" height="500px" alt="">
+                        <h2 class="text-xl text-center">Top Selling watch</h2>
+                        <h2 class="text-xl text-center text-green-700">Min.50% OFF</h2>
+                    </div>
+                    <div class="border-2 border-gray-200 p-5">
+                        <img src="./image/watch.webp" class=" hover:scale-105 mx-auto" alt="">
+                        <div class="mt-6">
+                            <h2 class="text-xl text-center">Top Selling watch</h2>
+                            <h2 class="text-xl text-center text-green-700">Min.50% OFF</h2>
+                        </div>
+
+                    </div>
+                    <div class="border-2 border-gray-200 p-5">
+                        <img src="./image/watch.webp" class=" hover:scale-105 mx-auto" alt="">
+                        <div class="mt-6">
+                            <h2 class="text-xl text-center">Top Selling watch</h2>
+                            <h2 class="text-xl text-center text-green-700">Min.50% OFF</h2>
+                        </div>
+
+                    </div>
+                    <div class="border-2 border-gray-200 mx-auto">
+                        <img src="https://rukminim1.flixcart.com/image/250/250/xif0q/watch/w/1/x/-original-imagqhvghcapcke4.jpeg?q=80"
+                            class="p-5 hover:scale-105" height="500px" alt="">
+                        <h2 class="text-xl text-center">Top Selling watch</h2>
+                        <h2 class="text-xl text-center text-green-700">Min.50% OFF</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container  bg-zinc-50 ">
+                <div class="py-2 px-2.5 flex items-center justify-between">
+                    <h4 class="text-xl font-bold ms=2">Sell Smart Watch</h4>
+                    <div class="w-6 h-6 flex items-center justify-center rounded-full bg-[#1C41D6]">
+                        <svg width="16" height="16" fill="none" viewBox="0 0 17 17"
+                            style="margin-bottom:4px;margin-left:4px;margin-right:4px;margin-top:4px">
+                            <path d="m6.627 3.749 5 5-5 5" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                        </svg>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-3 m-3  ">
+                    <div class="border-2 border-gray-200 p-5">
+                        <img src="./image/watch.webp" class=" hover:scale-105 mx-auto" alt="">
+                        <div class="mt-3">
+                            <h2 class="text-xl text-center">Top Selling watch</h2>
+                            <h2 class="text-xl text-center text-green-700">Min.50% OFF</h2>
+                        </div>
+
+                    </div>
+                    <div class="border-2 border-gray-200 mx-auto">
+                        <img src="https://rukminim1.flixcart.com/image/250/250/xif0q/watch/w/1/x/-original-imagqhvghcapcke4.jpeg?q=80"
+                            class="p-5 hover:scale-105" height="500px" alt="">
+                        <h2 class="text-xl text-center">Top Selling watch</h2>
+                        <h2 class="text-xl text-center text-green-700">Min.50% OFF</h2>
+                    </div>
+                    <div class="border-2 border-gray-200 mx-auto">
+                        <img src="https://rukminim1.flixcart.com/image/250/250/xif0q/watch/w/1/x/-original-imagqhvghcapcke4.jpeg?q=80"
+                            class="p-5 hover:scale-105" height="500px" alt="">
+                        <h2 class="text-xl text-center">Top Selling watch</h2>
+                        <h2 class="text-xl text-center text-green-700">Min.50% OFF</h2>
+                    </div>
+                    <div class="border-2 border-gray-200 p-5">
+                        <img src="./image/watch.webp" class=" hover:scale-105 mx-auto" alt="">
+                        <div class="mt-6">
+                            <h2 class="text-xl text-center">Top Selling watch</h2>
+                            <h2 class="text-xl text-center text-green-700">Min.50% OFF</h2>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+
+
+    <div class="max-w-[1600px] my-5 mx-auto bg-slate-50 ">
+        <div class="grid grid-cols-3 gap-5 ms-5 my-5">
+
+            <div class="container w-full border bg-zinc-50 border-l-slate-50 border-r-slate-50  grid-flow-col  ">
+                <div class="py-2 px-2.5 flex items-center justify-between">
+                    <h4 class="text-xl font-bold ms-2">Sell Smart Item</h4>
+                    <div class="w-6 h-6 flex items-center justify-center rounded-full bg-[#1C41D6]">
+                        <svg width="16" height="16" fill="none" viewBox="0 0 17 17"
+                            style="margin-bottom:4px;margin-left:4px;margin-right:4px;margin-top:4px">
+                            <path d="m6.627 3.749 5 5-5 5" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                        </svg>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-3 row-span-4 ">
+
+                    <div class="border-2 border-gray-200 p-5">
+                        <img src="./image/watch.webp" class=" hover:scale-105 mx-auto" alt="">
+                        <div class="mt-6">
+                            <h2 class="text-xl text-center">Top Selling watch</h2>
+                            <h2 class="text-xl text-center text-green-700">Min.50% OFF</h2>
+                        </div>
+
+                    </div>
+
+                    <div class="border-2 border-gray-200 mx-auto">
+                        <img src="./image/sneaker.webp" class="p-5 hover:scale-105" height="500px" alt="">
+                        <h2 class="text-xl text-center">Top Selling watch</h2>
+                        <h2 class="text-xl text-center text-green-700">Min.50% OFF</h2>
+                    </div>
+                    <div class="border-2 border-gray-200 mx-auto">
+                        <img src="image/sneaker.webp" class="p-5 hover:scale-105" height="500px" alt="">
+                        <h2 class="text-xl text-center">Top Selling watch</h2>
+                        <h2 class="text-xl text-center text-green-700">Min.50% OFF</h2>
+                    </div>
+                    <div class="border-2 border-gray-200 p-5">
+                        <img src="./image/watch.webp" class=" hover:scale-105 mx-auto" alt="">
+                        <div class="mt-6">
+                            <h2 class="text-xl text-center">Top Selling watch</h2>
+                            <h2 class="text-xl text-center text-green-700">Min.50% OFF</h2>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="container-fluid border bg-zinc-50 border-l-slate-50 border-r-slate-50  ">
+                <div class="py-2 px-2.5 flex items-center justify-between">
+                    <h4 class="text-xl font-bold ms-2">Sell Smart Item</h4>
+                    <div class="w-6 h-6 flex items-center justify-center rounded-full bg-[#1C41D6]">
+                        <svg width="16" height="16" fill="none" viewBox="0 0 17 17"
+                            style="margin-bottom:4px;margin-left:4px;margin-right:4px;margin-top:4px">
+                            <path d="m6.627 3.749 5 5-5 5" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                        </svg>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-3 ">
+                    <div class="border-2 border-gray-200 mx-auto">
+                        <img src="image/sneaker.webp" class="p-5 hover:scale-105" alt="">
+                        <h2 class="text-xl text-center">Top Selling watch</h2>
+                        <h2 class="text-xl text-center text-green-700">Min.50% OFF</h2>
+                    </div>
+                    <div class="border-2 border-gray-200 p-5">
+
+                        <img src="./image/watch.webp" class=" hover:scale-105 mx-auto" alt="">
+                        <div class="mt-7">
+                            <h2 class="text-xl text-center">Top Selling watch</h2>
+                            <h2 class="text-xl text-center text-green-700">Min.50% OFF</h2>
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="border-2 border-gray-200 mx-auto">
+                        <img src="https://rukminim1.flixcart.com/image/250/250/xif0q/watch/w/1/x/-original-imagqhvghcapcke4.jpeg?q=80"
+                            class="p-5 hover:scale-105" height="500px" alt="">
+                        <div class="">
+                            <h2 class="text-xl text-center">Top Selling watch</h2>
+                            <h2 class="text-xl text-center text-green-700">Min.50% OFF</h2>
+                        </div>
+
+                    </div>
+                    <div class="border-2 border-gray-200 p-5">
+                        <img src="./image/sneaker.webp" class=" hover:scale-105 mx-auto" alt="">
+                        <div class="mt-3">
+                            <h2 class="text-xl text-center">Top Selling watch</h2>
+                            <h2 class="text-xl text-center text-green-700">Min.50% OFF</h2>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="container border bg-zinc-50  ">
+                <div class="">
+                    <img src="https://rukminim1.flixcart.com/www/530/780/promos/26/09/2023/6c3c5fe2-c236-4fa2-8d97-595e1e01da01.jpg?q=80"
+                        class="w-full h-[830px] bg-cover   " alt="" />
+
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+    </div>
+
+    <!-- <div class="max-w-[1600px] my-5 mx-auto bg-slate-50">
+
+        <div class="py-2 px-2.5 flex items-center justify-between">
+            <h4 class="text-xl ms-7 font-bold">Best of Electronics</h4>
+            <div class="w-6 h-6 flex items-center justify-center rounded-full bg-[#1C41D6]">
+                <svg width="16" height="16" fill="none" viewBox="0 0 17 17"
+                    style="margin-bottom:4px;margin-left:4px;margin-right:4px;margin-top:4px">
+                    <path d="m6.627 3.749 5 5-5 5" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round"
+                        stroke-linejoin="round"></path>
+                </svg>
+            </div>
+        </div>
+        <div class="grid grid-cols-5 gap-4">
+            <div id="controls-carousel" class="relative w-full col-span-4 h-{300px}" data-carousel="static">
+
+                <div class="relative h-[300px] overflow-hidden rounded-lg">
+
+                    <div class="hidden duration-700 ease-in-out flex" data-carousel-item>
+                        <div class="grid grid-flow-col gap-4 px-8">
+                            <div class="row-start-2 row-span-2 ...">
+                                <div class="" style="height: 100px;">
+                                    <a href="#"
+                                        class="block max-w-sm p-6 bg-white border   border-gray-200 rounded-lg shadow -">
+                                        <img src="image/pr1/r1.jpeg" alt="product" class="hover:scale-105 ">
+                                        <p class="font-normal text-red-600">
+                                            Dingo Chrage Power Ranger
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row-start-2 row-span-2 ...">
+                                <a href="#"
+                                    class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow -">
+                                    <img src="image/pr1/b1.jpeg" alt="product" class="hover:scale-105">
+                                    <p class="font-normal text-gray-700 dark:text-black">
+                                        Dingo Chrage Power Ranger
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="row-start-2 row-span-2 ...">
+                                <a href="#"
+                                    class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow -">
+                                    <img src="image/pr1/pink2.jpeg" alt="product" class="hover:scale-105">
+                                    <p class="font-normal text-gray-700 dark:text-cyan-400">
+                                        Dingo Chrage Power Ranger
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="row-start-2 row-span-2 ...">
+                                <a href="#"
+                                    class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow -">
+                                    <img src="image/pr1/b2.jpeg" alt="product" class="hover:scale-105">
+                                    <p class="font-normal text-gray-700 dark:text-blue-600">
+                                        Dingo Chrage Power Ranger
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="row-start-2 row-span-2 ...">
+                                <a href="#"
+                                    class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow -">
+                                    <img src="image/pr1/g1.jpeg" alt="product" class="hover:scale-105">
+                                    <p class="font-normal text-gray-700 dark:text-green-600">
+                                        Dingo Chrage Power Ranger
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="row-start-2 row-span-2 ...">
+                                <a href="#"
+                                    class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow -">
+
+                                    <img src="image/pr1/gp1.jpeg" alt="product" class="hover:scale-105">
+                                    <p class="font-normal text-gray-700 dark:text-pink-600">
+                                        Dingo Chrage Power Ranger
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="hidden duration-700 ease-in-out flex" data-carousel-item>
+                        <div class="grid grid-flow-col gap-4 px-8">
+                            <div class="row-start-2 row-span-2 ...">
+                                <div class="" style="height: 100px;">
+                                    <a href="#"
+                                        class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow -">
+                                        <img src="image/samu/samu1.jpeg" alt="product" class="hover:scale-105">
+                                        <p class="font-normal text-gray-700 dark:text-red-600">
+                                            Samurai Power Ranger
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row-start-2 row-span-2 ...">
+                                <a href="#"
+                                    class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow -">
+                                    <img src="image/samu/samu2.jpeg" alt="product" class="hover:scale-105">
+                                    <p class="font-normal text-gray-700 dark:text-blue-600">
+                                        Samurai Power Ranger
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="row-start-2 row-span-2 ...">
+                                <a href="#"
+                                    class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow -">
+                                    <img src="image/samu/samu6.jpeg" alt="product" class="hover:scale-105">
+                                    <p class="font-normal text-gray-700 dark:text-pink-600">
+                                        Samurai Power Ranger
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="row-start-2 row-span-2 ...">
+                                <a href="#"
+                                    class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow -">
+                                    <img src="image/samu/samu5.jpeg" alt="product" class="hover:scale-105">
+                                    <p class="font-normal text-gray-700 dark:text-yellow-600">
+                                        Samurai Power Ranger
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="row-start-2 row-span-2 ...">
+                                <a href="#"
+                                    class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow -">
+                                    <img src="image/samu/samu3.jpeg" alt="product" class="hover:scale-105">
+                                    <p class="font-normal text-gray-700 dark:text-green-600">
+                                        Samurai Power Ranger
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="row-start-2 row-span-2 ...">
+                                <a href="#"
+                                    class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow -">
+
+                                    <img src="image/samu/samu4.jpeg" alt="product" class="hover:scale-105">
+                                    <p class="font-normal text-gray-700 dark:text-orange-600">
+                                        Samurai Power Ranger
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hidden duration-700 ease-in-out flex" data-carousel-item>
+                        <div class="grid grid-flow-col gap-4 px-8">
+                            <div class="row-start-2 row-span-2 ...">
+                                <div class="" style="height: 100px;">
+                                    <a href="#"
+                                        class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow -">
+                                        <img src="image/iloveimg-resized/spl1.jpeg" alt="product"
+                                            class="hover:scale-105">
+                                        <p class="font-normal text-gray-700 dark:text-gray-400">
+                                            Top Hero Spider Man
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row-start-2 row-span-2 ...">
+                                <a href="#"
+                                    class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow -">
+                                    <img src="image/sp3 (1).jpeg" alt="product" class="hover:scale-105">
+                                    <p class="font-normal text-gray-700 dark:text-gray-400">
+                                        Top Hero Spider Man
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="row-start-2 row-span-2 ...">
+                                <a href="#"
+                                    class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow -">
+                                    <img src="image/iloveimg-resized/spl1.jpeg" alt="product" class="hover:scale-105">
+                                    <p class="font-normal text-gray-700 dark:text-gray-400">
+                                        Top Hero Spider Man
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="row-start-2 row-span-2 ...">
+                                <a href="#"
+                                    class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow -">
+                                    <img src="image/sp3 (1).jpeg" alt="product" class="hover:scale-105">
+                                    <p class="font-normal text-gray-700 dark:text-gray-400">
+                                        Top Hero Spider Man
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="row-start-2 row-span-2 ...">
+                                <a href="#"
+                                    class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow -">
+                                    <img src="image/iloveimg-resized/spl1.jpeg" alt="product" class="hover:scale-105">
+                                    <p class="font-normal text-gray-700 dark:text-gray-400">
+                                        Top Hero Spider Man
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="row-start-2 row-span-2 ...">
+                                <a href="#"
+                                    class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow -">
+                                    <img src="image/sp3 (1).jpeg" alt="product" class="hover:scale-105">
+                                    <p class="font-normal text-gray-700 dark:text-gray-400">
+                                        Top Hero Spider Man
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="button"
+                    class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                    data-carousel-prev>
+                    <span
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                        <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M5 1 1 5l4 4" />
+                        </svg>
+                        <span class="sr-only">Previous</span>
+                    </span>
+                </button>
+                <button type="button"
+                    class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                    data-carousel-next>
+                    <span
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                        <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m1 9 4-4-4-4" />
+                        </svg>
+                        <span class="sr-only">Next</span>
+                    </span>
+                </button>
+            </div>
+            <div>
+                <img src="image/cd1.webp" width="200px" class="me-auto" alt="">
+            </div>
+        </div>
+    </div> -->
+
+
+
+
+
+    <!-- end  -->
+
+    <!-- 3column -->
+    <div class="max-[1600px]:  my-5 mt-36  mx-20 cursor-not-allowed">
+        <h1>Flipkart: The One-stop Shopping Destination</h1>E-commerce is revolutionizing the way we all shop in India.
+        Why do you want to hop from one store to another in search of the latest phone when you can find it on the
+        Internet in a single click? Not only mobiles. Flipkart houses everything you can possibly imagine, from trending
+        electronics like laptops, tablets, smartphones, and mobile accessories to in-vogue fashion staples like shoes,
+        clothing and lifestyle accessories; from modern furniture like sofa sets, dining tables, and wardrobes to
+        appliances that make your life easy like washing machines, TVs, ACs, mixer grinder juicers and other time-saving
+        kitchen and small appliances; from home furnishings like cushion covers, mattresses and bedsheets to toys and
+        musical instruments, we got them all covered. You name it, and you can stay assured about finding them all here.
+        For those of you with erratic working hours, Flipkart is your best bet. Shop in your PJs, at night or in the wee
+        hours of the morning. This e-commerce never shuts down. <br><br>What's more, with our year-round shopping
+        festivals and events, our prices are irresistible. We're sure you'll find yourself picking up more than what you
+        had in mind. If you are wondering why you should shop from Flipkart when there are multiple options available to
+        you, well, the below will answer your question. <br><br>
+        <h2>Flipkart Plus</h2>A world of limitless possibilities awaits you - Flipkart Plus was kickstarted as a loyalty
+        reward programme for all its regular customers at zero subscription fee. All you need is 500 supercoins to be a
+        part of this service. For every 100 rupees spent on Flipkart order, Plus members earns 4 supercoins &amp;
+        non-plus members earn 2 supercoins. Free delivery, early access during sales and shopping festivals, exchange
+        offers and priority customer service are the top benefits to a Flipkart Plus member. In short, earn more when
+        you shop more! <br><br>What's more, you can even use the Flipkart supercoins for a number of exciting services,
+        like:<br>An annual Zomato Gold membership<br>An annual Hotstar Premium membership<br>6 months Gaana plus
+        subscription<br>Rupees 550 instant discount on flights on ixigo<br>Check out
+        https://www.flipkart.com/plus/all-offers for the entire list. Terms and conditions apply.<br><br>
+        <h2>No Cost EMI</h2>In an attempt to make high-end products accessible to all, our No Cost EMI plan enables you
+        to shop with us under EMI, without shelling out any processing fee. Applicable on select mobiles, laptops, large
+        and small appliances, furniture, electronics and watches, you can now shop without burning a hole in your
+        pocket. If you've been eyeing a product for a long time, chances are it may be up for a no cost EMI. Take a look
+        ASAP! Terms and conditions apply.<br><br>
+        <h2>EMI on Debit Cards</h2>Did you know debit card holders account for 79.38 crore in the country, while there
+        are only 3.14 crore credit card holders? After enabling EMI on Credit Cards, in another attempt to make online
+        shopping accessible to everyone, Flipkart introduces EMI on Debit Cards, empowering you to shop confidently with
+        us without having to worry about pauses in monthly cash flow. At present, we have partnered with Axis Bank, HDFC
+        Bank, State Bank of India and ICICI Bank for this facility. More power to all our shoppers! Terms and conditions
+        apply. <br><br>
+        <h2>Mobile Exchange Offers</h2>Get an instant discount on the phone that you have been eyeing on. Exchange your
+        old mobile for a new one after the Flipkart experts calculate the value of your old phone, provided it is in a
+        working condition without damage to the screen. If a phone is applicable for an exchange offer, you will see the
+        'Buy with Exchange' option on the product description of the phone. So, be smart, always opt for an exchange
+        wherever possible. Terms and conditions apply. <br><br>
+        <h2>What Can You Buy From Flipkart?</h2>
+        <h2>Mobile Phones</h2>From budget phones to state-of-the-art smartphones, we have a mobile for everybody out
+        there. Whether you're looking for larger, fuller screens, power-packed batteries, blazing-fast processors,
+        beautification apps, high-tech selfie cameras or just large internal space, we take care of all the essentials.
+        Shop from top brands in the country like Samsung, Apple, Oppo, Xiaomi, Realme, Vivo, and Honor to name a few.
+        Rest assured, you're buying from only the most reliable names in the market. What's more, with Flipkart's
+        Complete Mobile Protection Plan, you will never again find the need to run around service centres. This plan
+        entails you to a number of post-purchase solutions, starting at as low as Rupees 99 only! Broken screens, liquid
+        damage to phone, hardware and software glitches, and replacements - <b>the Flipkart Complete Mobile
+            Protection</b> covers a comprehensive range of post-purchase problems, with door-to-door services. <br><br>
+
+    </div>
+
+    <!-- end3column -->
+
+
+    <!-- footer  -->
+
+    <div class="container-fluid mx-auto  bg-gray-800  footer">
+        <div class="grid grid-flow-col grid-cols-6 ">
+            <div class="">
+                <h4 class="mb-5 text-gray-500">About</h4>
+                <ul>
+
+                    <li><a href="#"><span class="list1 hover:underline text-white">Content Us</span></a></li>
+
+                    <li><a href="#"><span class="list1 hover:underline text-white">About Us</span></a></li>
+                    <li><a href="#"><span class="list1 hover:underline text-white">Carrers</span></a></li>
+                    <li><a href="#"><span class="list1 hover:underline text-white">FlirpKart Stories</span></a></li>
+                    <li><a href="#"><span class="list1 hover:underline text-white">Press </span></a></li>
+                    <li><a href="#"><span class="list1 hover:underline text-white">Flipkart Wholesale</span></a></li>
+                    <li><a href="#"><span class="list1 hover:underline text-white">Cleartrip</span></a></li>
+                    <li><a href="#"><span class="list1 hover:underline text-white">Corporate Information</span></a></li>
+
+                </ul>
+            </div>
+            <div class="">
+                <h4 class="mb-5 text-gray-500">Help</h4>
+                <ul>
+                    <li><a href="#"><span class="list1 hover:underline text-white">Cancellation & Returns</span></a>
+                    </li>
+
+                    <li><a href="#"><span class="list1 hover:underline text-white">Terms Of Use</span></a></li>
+                    <li><a href="#"><span class="list1 hover:underline text-white">Security</span></a></li>
+                    <li><a href="#"><span class="list1 hover:underline text-white">Privacy</span></a></li>
+
+                    <li><a href="#"><span class="list1 hover:underline text-white">Grievance Redressal</span></a></li>
+                    <li><a href="#"><span class="list1 hover:underline text-white">EPR Compliance</span></a></li>
+
+                </ul>
+            </div>
+
+            <div class="">
+                <h4 class="mb-5 text-gray-500">Policy</h4>
+                <ul>
+                    <li><a href="#"><span class="list1 hover:underline text-white">Payments</span></a></li>
+
+                    <li><a href="#"><span class="list1 hover:underline text-white">Shipping</span></a></li>
+                    <li><a href="#"><span class="list1 hover:underline text-white">Cancellation</span></a></li>
+                    <li><a href="#"><span class="list1 hover:underline text-white">Returns</span></a></li>
+                    <li><a href="#"><span class="list1 hover:underline text-white">FAQ</span></a></li>
+                    <li><a href="#"><span class="list1 hover:underline text-white">Report Intelligance</span></a></li>
+
+                </ul>
+            </div>
+            <div class="">
+                <h4 class="mb-5 text-gray-500">Social</h4>
+                <ul>
+
+                    <li><a href="#"><span class="list1 hover:underline text-white">Facebook</span></a></li>
+
+                    <li><a href="#"><span class="list1 hover:underline text-white">You Tube</span></a></li>
+                    <li><a href="#"><span class="list1 hover:underline text-white">Twitter</span></a></li>
+                    <li><a href="#"><span class="list1 hover:underline text-white">Instagram</span></a></li>
+
+                </ul>
+            </div>
+            <div class="border border-gray-800 border-l-white ps-3 cursor-context-menu">
+                <h4 class="mb-5 text-gray-500">Mail</h4>
+                <div class="text-white">
+                    <p class="_1oQ-r6">Flipkart Internet Private Limited, </p>
+                    <p class="_1oQ-r6"> Buildings Alyssa, Begonia &amp; </p>
+                    <p class="_1oQ-r6"> Clove Embassy Tech Village, </p>
+                    <p class="_1oQ-r6"> Outer Ring Road, Devarabeesanahalli Village, </p>
+                    <p class="_1oQ-r6"> Bengaluru, 560103, </p>
+                    <p class="_1oQ-r6"> Karnataka, India</p>
+                </div>
+            </div>
+            <div class=" cursor-context-menu">
+                <h4 class="mb-5 text-gray-500 ">Register</h4>
+                <div class="text-white">
+                    <p class="_1oQ-r6">Flipkart Internet Private Limited, </p>
+                    <p class="_1oQ-r6"> Buildings Alyssa, Begonia &amp; </p>
+                    <p class="_1oQ-r6"> Clove Embassy Tech Village, </p>
+                    <p class="_1oQ-r6"> Outer Ring Road, Devarabeesanahalli Village, </p>
+                    <p class="_1oQ-r6"> Bengaluru, 560103, </p>
+                    <p class="_1oQ-r6"> Karnataka, India </p>
+                    <p class="_1oQ-r6"> CIN : U51109KA2012PTC066107 </p>
+                    <p class="_1oQ-r6"></p>
+                    <p class="_1oQ-r6"> Telephone: <a href="tel:044-45614700">044-45614700</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-around mt-6 p-3 border border-gray-800 border-t-[#454D5E]">
+            <div class="flex items-center space-x-3">
+                <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/sell-image-9de8ef.svg"
+                    alt="">
+                <span class="text-white">Become a seller</span>
+            </div>
+            <div class="flex items-center space-x-3">
+                <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/advertise-image-866c0b.svg"
+                    alt="">
+                <span class="text-white">Advertise</span>
+            </div>
+            <div class="flex items-center space-x-3">
+                <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/gift-cards-image-d7ff24.svg"
+                    alt="">
+                <span class="text-white">Gift Cards</span>
+            </div>
+            <div class="flex items-center space-x-3">
+                <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/help-centre-image-c4ace8.svg"
+                    alt="">
+                <span class="text-white"> Help Center</span>
+            </div>
+            <div class="flex items-center space-x-3"><span class="pCGSTE text-white">© 2007-<!-- -->2023<!-- -->
+                    <span class="text-white">Flipkart.com</span></span></div>
+            <span><img
+                    src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/payment-method-c454fb.svg"
+                    alt=""></span>
+        </div>
+
+
+
+
+    </div>
+    <!-- footer  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+
+    <script>
+        AOS.init();
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: true,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: true,
+                center: true,
+                navText: [
+                    "<i class='fa fa-angle-left'></i>",
+                    "<i class='fa fa-angle-right'></i>"
+                ],
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 2
+                    },
+                    1000: {
+                        items: 4
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
